@@ -1,20 +1,20 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
 
-Explain how your project works
+A combinational two-input AND gate connects ui[0] (A) and ui[1] (B) to uo[0] (A AND B). The output is high only when both inputs are high. No clock is required.
 
 ## How to test
 
-Explain how to use your project
+Start the Wokwi simulation and toggle DIP switches 1 and 2. Check all four combinations:
+
+| A | B | Output |
+|---|---|---|
+| 0 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 1 |
+
+The LED on output 0 should light only for A=1 and B=1.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+The browser simulation uses two DIP switch inputs and a red LED connected to output 0 and ground. No physical hardware is needed for this activity; FPGA testing is deferred.
